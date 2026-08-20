@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Obrigado por solicitar seu diagnóstico gratuito. Entraremos em contato em até 24h úteis.">
+    <meta name="theme-color" content="#0A1628">
+    <title>Obrigado! | LegacyModern</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .thank-you {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: calc(var(--header-height) + var(--space-12)) var(--container-padding) var(--space-16);
+            text-align: center;
+        }
+        .thank-you-card {
+            max-width: 500px;
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            padding: var(--space-12);
+        }
+        .thank-you-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto var(--space-6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(34, 197, 94, 0.15);
+            border-radius: var(--radius-full);
+            color: var(--color-success);
+        }
+        .thank-you h1 {
+            font-size: clamp(var(--fs-2xl), 5vw, var(--fs-4xl));
+            margin-bottom: var(--space-4);
+        }
+        .thank-you p {
+            color: var(--color-fg-muted);
+            font-size: var(--fs-lg);
+            line-height: 1.7;
+            margin-bottom: var(--space-8);
+        }
+        .next-steps {
+            text-align: left;
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: var(--space-6);
+            margin-bottom: var(--space-8);
+        }
+        .next-steps h3 {
+            font-size: var(--fs-base);
+            margin-bottom: var(--space-4);
+            color: var(--color-primary);
+        }
+        .next-steps ol {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-3);
+            counter-reset: step;
+        }
+        .next-steps li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-3);
+            font-size: var(--fs-sm);
+            color: var(--color-fg-muted);
+            line-height: 1.5;
+        }
+        .next-steps li::before {
+            counter-increment: step;
+            content: counter(step);
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-primary-muted);
+            color: var(--color-primary);
+            border-radius: var(--radius-full);
+            font-size: var(--fs-xs);
+            font-weight: 700;
+            font-family: var(--font-mono);
+        }
+        .thank-you-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-4);
+            justify-content: center;
+        }
+        .thank-you-link {
+            color: var(--color-primary);
+            text-decoration: underline;
+            font-weight: 500;
+        }
+        .thank-you-link:hover {
+            color: var(--color-primary-hover);
+        }
+    </style>
+</head>
+<body>
+    <header class="header" role="banner">
+        <nav class="nav container" aria-label="Navegação principal">
+            <a href="index.html" class="logo" aria-label="Home">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <rect width="32" height="32" rx="8" fill="currentColor"/>
+                    <path d="M8 12h16M8 16h12M8 20h8" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-text">Legacy<span>Modern</span></span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thank-you" aria-labelledby="thank-you-title">
+            <div class="container">
+                <article class="thank-you-card">
+                    <div class="thank-you-icon" aria-hidden="true">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    
+                    <h1 id="thank-you-title">Solicitação recebida com sucesso!</h1>
+                    
+                    <p>Obrigado por confiar na LegacyModern. Entraremos em contato em <strong>até 24h úteis</strong> para agendar seu diagnóstico técnico gratuito de 30 minutos.</p>
+                    
+                    <div class="next-steps">
+                        <h3>O que acontece agora:</h3>
+                        <ol>
+                            <li>Analisamos suas respostas e o sistema descrito</li>
+                            <li>Enviamos e-mail com 3 opções de horário para o diagnóstico</li>
+                            <li>Fazemos a call de 30 min (Zoom/Meet/Teams) — sem pitch, só técnica</li>
+                            <li>Entregamos plano preliminar com estratégia, prazo e investimento</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="thank-you-actions">
+                        <a href="https://www.linkedin.com/in/adrianoviana/" target="_blank" rel="noopener" class="thank-you-link">
+                            Conectar no LinkedIn enquanto isso
+                        </a>
+                        <a href="index.html" class="btn btn-secondary">
+                            Voltar para a página inicial
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 LegacyModern. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

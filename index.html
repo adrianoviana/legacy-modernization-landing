@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modernizamos sistemas legados críticos — qualquer stack — com prazo e orçamento fechados, usando um time sênior enxuto apoiado por IA, a uma fração do custo de uma consultoria tradicional.">
+    <meta name="theme-color" content="#0A1628">
+    <title>Modernização de Sistemas Legados Críticos | Prazo e Orçamento Fechados</title>
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Modernização de Sistemas Legados Críticos | Prazo e Orçamento Fechados">
+    <meta property="og:description" content="Seu sistema legado virou um risco que ninguém quer assumir. A gente resolve isso com time sênior enxuto, prazo fechado e sem o preço nem o tempo de mobilização de uma consultoria grande.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adrianoviana.github.io/legacy-modernization-landing/">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Modernização de Sistemas Legados Críticos">
+    <meta name="twitter:description" content="Time sênior enxuto, IA, prazo e orçamento fechados. A fração do custo de consultoria tradicional.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header" role="banner">
+        <nav class="nav container" aria-label="Navegação principal">
+            <a href="#" class="logo" aria-label="Home">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <rect width="32" height="32" rx="8" fill="currentColor"/>
+                    <path d="M8 12h16M8 16h12M8 20h8" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-text">Legacy<span>Modern</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#problema" class="nav-link">O Problema</a>
+                <a href="#solucao" class="nav-link">A Solução</a>
+                <a href="#como-funciona" class="nav-link">Como Funciona</a>
+                <a href="#diagnostico" class="nav-link cta-nav">Diagnóstico Gratuito</a>
+            </div>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot" aria-hidden="true"></span>
+                        <span>Time sênior enxuto + IA</span>
+                        <span class="badge-separator" aria-hidden="true">·</span>
+                        <span>Prazo & orçamento fechados</span>
+                        <span class="badge-separator" aria-hidden="true">·</span>
+                        <span>Fração do custo de consultoria</span>
+                    </div>
+                    
+                    <h1 id="hero-title" class="hero-title">
+                        Modernizamos sistemas legados críticos — 
+                        <span class="highlight">qualquer stack</span> — 
+                        com prazo e orçamento fechados
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Seu sistema legado virou um risco que ninguém quer assumir. 
+                        A gente resolve isso com um time sênior enxuto, prazo fechado e 
+                        sem o preço nem o tempo de mobilização de uma consultoria grande.
+                    </p>
+                    
+                    <div class="hero-cta-group">
+                        <a href="#diagnostico" class="btn btn-primary btn-lg">
+                            <span>Agendar diagnóstico gratuito de 30 min</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#como-funciona" class="btn btn-secondary btn-lg">
+                            <span>Ver como funciona</span>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-trust" aria-label="Indicadores de confiança">
+                        <div class="trust-item">
+                            <span class="trust-number">30 min</span>
+                            <span class="trust-label">Diagnóstico gratuito</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-number">100%</span>
+                            <span class="trust-label">Orçamento fechado</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-number">0</span>
+                            <span class="trust-label">Surpresas no prazo</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-number">1/3</span>
+                            <span class="trust-label">Custo consultoria</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="visual-card">
+                        <div class="visual-header">
+                            <div class="window-controls" aria-hidden="true">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="visual-code">
+                            <pre><code><span class="comment">// Antes: Sistema legado crítico</span>
+<span class="keyword">class</span> <span class="class">SistemaLegado</span> {
+  <span class="function">processarPedido</span>(pedido) {
+    <span class="comment">// 15k linhas, sem testes,</span>
+    <span class="comment">// ninguém sabe como funciona</span>
+    <span class="keyword">if</span> (pedido.<span class="property">tipo</span> === <span class="string">'urgente'</span>) {
+      <span class="comment">// gambiarra de 2012</span>
+      <span class="keyword">return</span> <span class="function">hackTemporario</span>(pedido);
+    }
+    <span class="keyword">return</span> <span class="function">fluxoNormal</span>(pedido);
+  }
+}
+
+<span class="comment">// Depois: Modernizado com IA</span>
+<span class="keyword">class</span> <span class="class">SistemaModerno</span> {
+  <span class="decorator">@Validado</span>
+  <span class="decorator">@Testado</span>
+  <span class="decorator">@Documentado</span>
+  <span class="keyword">async</span> <span class="function">processarPedido</span>(pedido: Pedido) {
+    <span class="keyword">const</span> resultado = <span class="keyword">await</span> 
+      <span class="function">pipelineIA</span>.<span class="function">executar</span>(pedido);
+    <span class="keyword">return</span> <span class="function">auditar</span>(resultado);
+  }
+}</code></pre>
+                        </div>
+                        <div class="visual-arrow" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/>
+                                <path d="M24 16v16M16 24h16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section id="problema" class="section problem" aria-labelledby="problema-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag">O Problema Real</span>
+                    <h2 id="problema-title" class="section-title">Seu sistema legado não é só "código velho" — é um risco ativo</h2>
+                    <p class="section-subtitle">Enquanto você lê isso, o risco técnico, de segurança e de negócio só aumenta</p>
+                </header>
+                
+                <div class="problem-grid">
+                    <article class="problem-card">
+                        <div class="problem-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                                <line x1="12" y1="9" x2="12" y2="13"/>
+                                <line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                        </div>
+                        <h3>Risco de segurança não mapeado</h3>
+                        <p>Sistemas sem updates há anos acumulam CVEs conhecidos. Uma brecha pode expor dados sensíveis e parar a operação.</p>
+                    </article>
+                    
+                    <article class="problem-card">
+                        <div class="problem-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <h3>Dependência de pessoa-chave</h3>
+                        <p>Só uma pessoa entende o código. Se ela sai, o conhecimento vai junto. Buscar substituto leva meses e custa caro.</p>
+                    </article>
+                    
+                    <article class="problem-card">
+                        <div class="problem-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="20" x2="18" y2="10"/>
+                                <line x1="12" y1="20" x2="12" y2="4"/>
+                                <line x1="6" y1="20" x2="6" y2="14"/>
+                            </svg>
+                        </div>
+                        <h3>Incapacidade de escalar</h3>
+                        <p>O sistema não suporta o crescimento do negócio. Cada nova feature vira uma gambiarra sobre outra gambiarra.</p>
+                    </article>
+                    
+                    <article class="problem-card">
+                        <div class="problem-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                <path d="M6 8h12M4 12h16M4 16h12"/>
+                            </svg>
+                        </div>
+                        <h3>Pressão de compliance e auditoria</h3>
+                        <p>Requisitos regulatórios (LGPD, SOX, PCI) exigem rastreabilidade, logs e controles que o legado não tem.</p>
+                    </article>
+                    
+                    <article class="problem-card">
+                        <div class="problem-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                            </svg>
+                        </div>
+                        <h3>Custo de manutenção explosivo</h3>
+                        <p>80% do orçamento de TI gasto em "manter as luzes acesas" em vez de inovar. O custo de não fazer nada é maior.</p>
+                    </article>
+                    
+                    <article class="problem-card">
+                        <div class="problem-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                            </svg>
+                        </div>
+                        <h3>Travado no passado tecnológico</h3>
+                        <p>Stack obsoleta impede contratar talentos, integrar com modernos SaaS, usar cloud nativa, adotar IA.</p>
+                    </article>
+                </div>
+                
+                <div class="problem-cta">
+                    <p class="problem-cta-text">Reconheceu sua situação? <strong>Não é culpa sua — mas é seu problema para resolver.</strong></p>
+                    <a href="#diagnostico" class="btn btn-primary">Quero entender meu risco real</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section id="solucao" class="section solution" aria-labelledby="solucao-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag">Nossa Abordagem</span>
+                    <h2 id="solucao-title" class="section-title">Modernização com time sênior enxuto, IA e compromisso de entrega</h2>
+                    <p class="section-subtitle">Não somos consultoria tradicional. Somos um time que entrega.</p>
+                </header>
+                
+                <div class="solution-comparison">
+                    <div class="comparison-card traditional">
+                        <h3>Consultoria Tradicional</h3>
+                        <ul class="comparison-list">
+                            <li><span class="icon">✕</span> Meses de mobilização (RFPs, alocação, onboarding)</li>
+                            <li><span class="icon">✕</span> Times grandes com muitos juniors supervisionados por 1 sênior</li>
+                            <li><span class="icon">✕</span> Orçamento aberto — "a gente avisa quando estourar"</li>
+                            <li><span class="icon">✕</span> Prazo elástico — "depende da complexidade descoberta"</li>
+                            <li><span class="icon">✕</span> Entregam documento de 200 páginas, você implementa</li>
+                            <li><span class="icon">✕</span> Custo: R$ 500k–2M+ para projetos médios</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="comparison-card our-way">
+                        <h3>Nosso Modelo</h3>
+                        <ul class="comparison-list">
+                            <li><span class="icon">✓</span> Início imediato — time sênior já montado e entrosado</li>
+                            <li><span class="icon">✓</span> 3–5 engenheiros sêniores + IA (fazem o trabalho pesado)</li>
+                            <li><span class="icon">✓</span> Orçamento fechado desde o diagnóstico — sem surpresas</li>
+                            <li><span class="icon">✓</span> Prazo comprometido com marcos claros e entregas parciais</li>
+                            <li><span class="icon">✓</span> Entregamos código funcionando em produção</li>
+                            <li><span class="icon">✓</span> Custo: ~⅓ a ½ da consultoria tradicional</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="solution-pillars">
+                    <article class="pillar">
+                        <div class="pillar-number">01</div>
+                        <h3>Diagnóstico Técnico Real (30 min, gratuito)</h3>
+                        <p>Mapeamos o sistema, riscos, dependências, dívida técnica e traçamos o caminho. Sem venda, só clareza.</p>
+                    </article>
+                    
+                    <article class="pillar">
+                        <div class="pillar-number">02</div>
+                        <h3>Plano de Modernização com Escopo Fechado</h3>
+                        <p>Definimos o que entra, o que fica, cronograma, marcos de entrega e valor total. Você aprova antes de começar.</p>
+                    </article>
+                    
+                    <article class="pillar">
+                        <div class="pillar-number">03</div>
+                        <h3>Execução com IA Acelerando o Time</h3>
+                        <p>IA para: análise de código legado, geração de testes, migração de dados, documentação, refatoração assistida. Humanos decidem, IA executa o repetitivo.</p>
+                    </article>
+                    
+                    <article class="pillar">
+                        <div class="pillar-number">04</div>
+                        <h3>Entregas Incrementais em Produção</h3>
+                        <p>Não esperamos o final. A cada 2–3 semanas, funcionalidades modernizadas vão para produção com feature flags. Risco zero de big bang.</p>
+                    </article>
+                    
+                    <article class="pillar">
+                        <div class="pillar-number">05</div>
+                        <h3>Transferência de Conhecimento Real</h3>
+                        <p>Seu time aprende junto. Documentação viva, arquitetura de decisões (ADRs), testes automatizados, runbooks. Você fica dono do código.</p>
+                    </article>
+                    
+                    <article class="pillar">
+                        <div class="pillar-number">06</div>
+                        <h3>Suporte Pós-Go-Live Incluso</h3>
+                        <p>90 dias de estabilização, monitoramento e ajustes. Não desaparecemos no dia da entrega.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="como-funciona" class="section how-it-works" aria-labelledby="como-funciona-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag">Processo</span>
+                    <h2 id="como-funciona-title" class="section-title">Do diagnóstico ao sistema moderno em produção — sem surpresas</h2>
+                    <p class="section-subtitle">Um processo previsível, transparente e feito para sistemas que não podem parar</p>
+                </header>
+                
+                <ol class="steps">
+                    <li class="step">
+                        <div class="step-number" aria-hidden="true">1</div>
+                        <div class="step-content">
+                            <h3>Diagnóstico Gratuito (30 min)</h3>
+                            <p>Conversa técnica direta: qual sistema, há quanto tempo, quem mantém, o que já tentaram, pressões de compliance, cenário ideal de prazo/orçamento. Zero venda.</p>
+                            <span class="step-duration">30 min · Remoto · Sem compromisso</span>
+                        </div>
+                    </li>
+                    
+                    <li class="step">
+                        <div class="step-number" aria-hidden="true">2</div>
+                        <div class="step-content">
+                            <h3>Análise Profunda & Plano (5–7 dias)</h3>
+                            <p>Nosso time faz imersão no código, arquitetura, dados, dependências. Entregamos: mapa de riscos, estratégia de migração (strangler fig, rewrite seletivo, etc.), escopo fechado, cronograma, investimento total.</p>
+                            <span class="step-duration">5–7 dias · Relatório executivo + técnico</span>
+                        </div>
+                    </li>
+                    
+                    <li class="step">
+                        <div class="step-number" aria-hidden="true">3</div>
+                        <div class="step-content">
+                            <h3>Aprovação & Kickoff</h3>
+                            <p>Você aprova o plano. Assinamos contrato com escopo, prazo e valor fixos. Time alocado, ambiente preparado, feature flags configuradas.</p>
+                            <span class="step-duration">1 semana · Contrato com SLA</span>
+                        </div>
+                    </li>
+                    
+                    <li class="step">
+                        <div class="step-number" aria-hidden="true">4</div>
+                        <div class="step-content">
+                            <h3>Sprints de Modernização (2–3 sem/ciclo)</h3>
+                            <p>Entregas incrementais em produção atrás de feature flags. Testes automatizados, observabilidade, rollback instantâneo. Você valida a cada ciclo.</p>
+                            <span class="step-duration">Ciclos de 2–3 semanas · Entregas reais</span>
+                        </div>
+                    </li>
+                    
+                    <li class="step">
+                        <div class="step-number" aria-hidden="true">5</div>
+                        <div class="step-content">
+                            <h3>Cutover & Go-Live</h3>
+                            <p>Migração planejada (blue-green, canary, big bang controlado). Monitoramento 24/7 na semana crítica. Rollback em minutos se necessário.</p>
+                            <span class="step-duration">1–2 semanas · Cutover assistido</span>
+                        </div>
+                    </li>
+                    
+                    <li class="step">
+                        <div class="step-number" aria-hidden="true">6</div>
+                        <div class="step-content">
+                            <h3>Estabilização & Handoff (90 dias)</h3>
+                            <p>Suporte ativo, tuning de performance, transferência completa de conhecimento, documentação, runbooks. Seu time assume com confiança.</p>
+                            <span class="step-duration">90 dias · Suporte incluso</span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- CTA / Diagnostic Section -->
+        <section id="diagnostico" class="section diagnostic" aria-labelledby="diagnostico-title">
+            <div class="container">
+                <div class="diagnostic-card">
+                    <header class="diagnostic-header">
+                        <div class="diagnostic-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                <path d="M6 8h12M4 12h16M4 16h12"/>
+                                <circle cx="18" cy="18" r="3"/>
+                                <path d="M16.5 19.5l3 3"/>
+                            </svg>
+                        </div>
+                        <h2 id="diagnostico-title">Diagnóstico Técnico Gratuito — 30 Minutos</h2>
+                        <p>Sem pitch, sem pressão. Só clareza sobre o risco real e o caminho possível.</p>
+                    </header>
+                    
+                    <ul class="diagnostic-includes" aria-label="O que inclui o diagnóstico">
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Mapeamento do sistema atual e riscos críticos</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Identificação de dívida técnica e dependências ocultas</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Estratégia de migração recomendada (strangler fig, rewrite, hybrid)</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Estimativa realista de prazo, esforço e investimento</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Plano de ação preliminar para próxima conversa</li>
+                    </ul>
+                    
+                    <div class="diagnostic-form-container">
+                        <form id="diagnostic-form" class="diagnostic-form" action="https://formspree.io/f/your-form-id" method="POST">
+                            <input type="hidden" name="_next" value="/obrigado.html">
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nome">Nome completo *</label>
+                                    <input type="text" id="nome" name="nome" required autocomplete="name" placeholder="Seu nome">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-mail corporativo *</label>
+                                    <input type="email" id="email" name="email" required autocomplete="email" placeholder="seu@email.com">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="empresa">Empresa *</label>
+                                    <input type="text" id="empresa" name="empresa" required autocomplete="organization" placeholder="Nome da empresa">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cargo">Seu cargo *</label>
+                                    <select id="cargo" name="cargo" required>
+                                        <option value="">Selecione...</option>
+                                        <option value="cto">CTO / VP Engenharia</option>
+                                        <option value="diretor">Diretor de TI / Tecnologia</option>
+                                        <option value="gerente">Gerente de Engenharia / Arquitetura</option>
+                                        <option value="tech-lead">Tech Lead / Arquiteto</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="sistema">Descreva brevemente o sistema legado *</label>
+                                <textarea id="sistema" name="sistema" rows="4" required placeholder="Ex: Sistema de faturamento em Java 6 / Oracle Forms, 18 anos, 200k linhas, 3 devs mantêm, última release há 2 anos, pressão de auditoria SOX..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="dor">Qual a maior dor hoje? *</label>
+                                <select id="dor" name="dor" required>
+                                    <option value="">Selecione a principal...</option>
+                                    <option value="seguranca">Risco de segurança / vulnerabilidades não tratadas</option>
+                                    <option value="pessoa-chave">Dependência de pessoa-chave que pode sair</option>
+                                    <option value="escalabilidade">Não escala / impede crescimento do negócio</option>
+                                    <option value="compliance">Pressão de auditoria / compliance / LGPD</option>
+                                    <option value="custo">Custo de manutenção insustentável</option>
+                                    <option value="talentos">Não consegue contratar para a stack antiga</option>
+                                    <option value="tentativa-falha">Já tentaram modernizar e travou</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="lgpd" name="lgpd" required>
+                                <label for="lgpd">Concordo em receber o plano preliminar por e-mail e eventuais conteúdos relevantes sobre modernização de legados. <a href="#privacidade">Política de privacidade</a>.</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block btn-lg" id="submit-btn">
+                                <span class="btn-text">Agendar meu diagnóstico gratuito</span>
+                                <span class="btn-loader" aria-hidden="true">
+                                    <svg class="spinner" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-dasharray="30 100"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            
+                            <p class="form-disclaimer">Sem spam. Sem ligação de vendas. Apenas o diagnóstico técnico prometido.</p>
+                        </form>
+                        
+                        <div id="form-success" class="form-success" hidden>
+                            <div class="success-icon" aria-hidden="true">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <h3>Solicitação enviada!</h3>
+                            <p>Entraremos em contato em até 24h úteis para agendar seu diagnóstico de 30 minutos.</p>
+                            <p class="success-note">Enquanto isso, <a href="https://www.linkedin.com/in/adrianoviana/" target="_blank" rel="noopener">conecte-se no LinkedIn</a> para trocar uma ideia informal.</p>
+                        </div>
+                        
+                        <div id="form-error" class="form-error" hidden>
+                            <div class="error-icon" aria-hidden="true">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="15" y1="9" x2="9" y2="15"/>
+                                    <line x1="9" y1="9" x2="15" y2="15"/>
+                                </svg>
+                            </div>
+                            <h3>Ops, algo deu errado</h3>
+                            <p>Tente novamente ou envie e-mail direto para <a href="mailto:contato@legacymodern.com.br">contato@legacymodern.com.br</a></p>
+                            <button type="button" class="btn btn-secondary" onclick="resetForm()">Tentar novamente</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section faq" aria-labelledby="faq-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag">Perguntas Frequentes</span>
+                    <h2 id="faq-title" class="section-title">Dúvidas que costumam surgir antes da primeira conversa</h2>
+                </header>
+                
+                <div class="faq-grid">
+                    <details class="faq-item">
+                        <summary>Quais stacks/tecnologias vocês modernizam?</summary>
+                        <div class="faq-answer">
+                            <p><strong>Qualquer stack.</strong> Já modernizamos: Mainframe (COBOL, PL/I), Java 6–8 / J2EE / EJB, .NET Framework / WebForms / VB6, Delphi, PowerBuilder, Oracle Forms/Reports, Progress 4GL, PHP legacy, Python 2, Ruby 1.8, Node.js antigo, AngularJS, jQuery spaghetti. Se roda em produção e ninguém quer tocar, a gente resolve.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>Como garantem prazo e orçamento fechados sem conhecer o código todo?</summary>
+                        <div class="faq-answer">
+                            <p>O <strong>diagnóstico gratuito</strong> + <strong>análise profunda (5–7 dias)</strong> servem exatamente para isso. Só fechamos escopo, prazo e valor <em>depois</em> de entender o sistema. Se na análise descobrirmos complexidade muito maior, apresentamos opções (reduzir escopo, fasear, ajustar valor) <em>antes</em> de assinar. Zero surpresa depois do contrato.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>E se o sistema não puder parar durante a migração?</summary>
+                        <div class="faq-answer">
+                            <p>É o cenário padrão. Usamos <strong>Strangler Fig Pattern</strong> + <strong>Feature Flags</strong> + <strong>Dual Write / CDC</strong>. O legado roda em paralelo com o novo. Migramos domínio por domínio, validamos em produção com usuários reais (canary), fazemos cutover controlado. Rollback em minutos se algo der errado. Zero downtime não planejado.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>Como a IA entra no processo? Não é só "gerar código"?</summary>
+                        <div class="faq-answer">
+                            <p>Longe disso. IA acelera o <strong>trabalho pesado e repetitivo</strong>: análise estática de 200k+ linhas, geração de testes de caracterização (characterization tests), migração de dados e schemas, documentação técnica, refatoração mecânica, boilerplate de APIs. O <strong>time sênior decide arquitetura, valida, revisa, assume responsabilidade</strong>. IA = alavanca, não piloto automático.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>Qual o tamanho típico dos projetos?</summary>
+                        <div class="faq-answer">
+                            <p>De <strong>R$ 150k a R$ 800k</strong> (vs. R$ 500k–3M+ consultoria grande). Prazo típico: <strong>3 a 9 meses</strong>. Time: <strong>3 a 5 engenheiros sêniores</strong> + 1 tech lead dedicado. Não fazemos projetos de R$ 50k (não dá pra ser sério com prazo/escopo fechado) nem de R$ 5M (fogem do nosso modelo enxuto).</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>E se meu time interno quiser assumir no meio do caminho?</summary>
+                        <div class="faq-answer">
+                            <p><strong>Perfeito.</strong> Nosso modelo prevê isso. A cada sprint, seu time pode parear com o nosso. Documentação viva (ADRs, runbooks, diagramas de arquitetura), testes automatizados como especificação executável, knowledge sharing sessions quinzenais. No final dos 90 dias de estabilização, seu time já é dono do código — não "herda" um legado novo.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>Atendem apenas empresas grandes?</summary>
+                        <div class="faq-answer">
+                            <p>Atendemos <strong>médias e grandes</strong> (50–5000+ funcionários) que têm sistema crítico rodando há 10+ anos. Startups early-stage geralmente não têm "legado crítico" — têm MVP para refatorar. Se você tem sistema que, se parar, a empresa para — a gente conversa.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>Como funciona o pagamento?</summary>
+                        <div class="faq-answer">
+                            <p><strong>Marcos de entrega, não horas.</strong> Exemplo típico: 20% no kickoff, 30% na primeira entrega em produção, 30% no cutover, 20% ao final dos 90 dias de estabilização. Alinhado com valor entregue, não com "gente alocada".</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="section final-cta" aria-labelledby="final-cta-title">
+            <div class="container">
+                <div class="final-cta-content">
+                    <h2 id="final-cta-title">Seu sistema legado não vai se modernizar sozinho</h2>
+                    <p>O risco só aumenta. O custo de não fazer nada já passou do custo de fazer. Vamos mapear a realidade em 30 minutos — sem compromisso.</p>
+                    <a href="#diagnostico" class="btn btn-primary btn-lg">Agendar diagnóstico gratuito</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo" aria-label="Home">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                            <rect width="32" height="32" rx="8" fill="currentColor"/>
+                            <path d="M8 12h16M8 16h12M8 20h8" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="logo-text">Legacy<span>Modern</span></span>
+                    </a>
+                    <p>Modernização de sistemas legados críticos com time sênior enxuto, IA, prazo e orçamento fechados.</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/adrianoviana/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://github.com/adrianoviana" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCPl-Y1ypgzViQQDxeI26fMQ" target="_blank" rel="noopener" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 7.587 0 12 0 12s0 4.413.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 16.413 24 12 24 12s0-4.413-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <nav class="footer-nav" aria-label="Navegação do rodapé">
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#problema">O Problema</a></li>
+                            <li><a href="#solucao">A Solução</a></li>
+                            <li><a href="#como-funciona">Como Funciona</a></li>
+                            <li><a href="#diagnostico">Diagnóstico Gratuito</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Recursos</h4>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/adrianoviana/" target="_blank" rel="noopener">LinkedIn do Founder</a></li>
+                            <li><a href="https://github.com/adrianoviana" target="_blank" rel="noopener">GitHub</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCPl-Y1ypgzViQQDxeI26fMQ" target="_blank" rel="noopener">Canal no YouTube</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="mailto:contato@legacymodern.com.br">contato@legacymodern.com.br</a></li>
+                            <li><a href="#diagnostico">Agendar diagnóstico</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 LegacyModern. Todos os direitos reservados.</p>
+                    <p id="privacidade"><a href="#">Política de Privacidade</a> · <a href="#">Termos de Uso</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
